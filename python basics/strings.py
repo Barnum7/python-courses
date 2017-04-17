@@ -41,3 +41,16 @@ print x.upper() #This calls the upper case method on my string
 print x.lower() #the lower case function on my string
 
 print x.split('e') #This splits my string whereever an 'e' occurs
+
+# Examples of String Interpolation
+s = 'string'
+
+print "How many letters are in 'string'? %s" %(len(s))
+
+print "Floating point number: %1.2f" %(3.1415) #The digit to the left of the decimal tells you the minimal number of digits in the number. The number to the right tells you how many digits to float to. The f tells you that it is a floating point number
+
+print "My name is %s. My brothers are %s, %s, %s, and %s" %('Brian', 'Cody', 'Derek', 'Scott', 'Ian') #Interpolate the strings in the order they are passed as arguments
+
+print "{surname}. Brian {surname}".format(surname="Groat") #When you need to repeat the value you are interpolating.
+
+print "{surname}. {first_name} {surname}".format(surname="Groat", first_name = "Brian") #You can also pass multiple arguments
