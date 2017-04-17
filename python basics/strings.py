@@ -1,5 +1,6 @@
 # from __future__ import print_function
 
+# In python strings have a property called immutability. This means that you cannot change the data once it is set. However you can concate data to it. Or reassign the entire variable
 # You can use single or double quotes to create strinsg
 print "Hello"
 print 'world'
